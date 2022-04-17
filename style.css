@@ -19,7 +19,7 @@ li {
 
 nav {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
 
   height: 100px;
@@ -29,12 +29,10 @@ nav {
 }
 
 h1 {
-  position: absolute;
-  left: 10%;
-
   color: azure;
   text-shadow: 1px 2px 2px gray;
   font-size: 30px;
+  margin-left: 30px;
 }
 
 section {
@@ -121,4 +119,29 @@ section {
 
 button {
   margin-left: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  h1 {
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .uiColor {
+    display: flex;
+    justify-content: center;
+  }
+
+  .uiColor .navbar {
+    padding: 0 0 0 20px;
+  }
 }
